@@ -1,0 +1,122 @@
+/* nav stuff */
+nav {
+    background-color: #444;
+    padding: 8px;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav li {
+    display: inline;
+    margin: 10px;
+}
+nav li:hover {
+    background-color: #666;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 8px;
+}
+
+/* audio box */
+.audio-box {
+    background-color: #f3f3f3;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+}
+.audio-box button {
+    padding: 8px;
+    background-color: red;
+    color: white;
+    border: none;
+    margin: 5px;
+}
+.audio-box button:hover {
+    background-color: darkred;
+}
+
+/* buttons */
+.custom-btn {
+    padding: 8px 15px;
+    background-color: blue;
+    color: white;
+    border: none;
+    margin: 10px;
+}
+.custom-btn:hover {
+    background-color: navy;
+}
+
+/* home page */
+.home-stuff {
+    text-align: center;
+    padding: 15px;
+}
+#quote {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* stocks page */
+.stocks-stuff {
+    text-align: center;
+    padding: 15px;
+}
+#ticker, #days {
+    padding: 8px;
+    margin: 5px;
+}
+#stockChart {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+}
+#redditStocks {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+#redditStocks th, #redditStocks td {
+    border: 1px solid #aaa;
+    padding: 6px;
+}
+#redditStocks th {
+    background-color: #ddd;
+}
+
+/* dogs page */
+.dogs-stuff {
+    text-align: center;
+    padding: 15px;
+}
+#dogSlider {
+    width: 80%;
+    max-width: 500px;
+    margin: 20px auto;
+}
+#dogSlider img {
+    width: 100%;
+}
+.breed-btn {
+    padding: 8px;
+    background-color: orange;
+    color: white;
+    border: none;
+    margin: 5px;
+}
+.breed-btn:hover {
+    background-color: darkorange;
+}
+#breedInfo {
+    padding: 12px;
+    background-color: #fafafa;
+    margin: 20px auto;
+    border: 1px solid #bbb;
+    width: 80%;
+    max-width: 400px;
+}

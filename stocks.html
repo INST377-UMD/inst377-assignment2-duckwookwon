@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Stocks</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+
+  <div class="stocks-stuff">
+    <h1>Stock Lookup</h1>
+    <input type="text" id="ticker" placeholder="Enter ticker like MSFT">
+    <select id="days">
+      <option value="30">30 Days</option>
+      <option value="60">60 Days</option>
+      <option value="90">90 Days</option>
+    </select>
+    <button class="custom-btn" onclick="getStock()">Lookup</button>
+    <canvas id="stockChart" width="600" height="300"></canvas>
+
+    <h2>Top 5 Reddit Stocks</h2>
+    <table id="redditStocks">
+      <tr>
+        <th>Ticker</th>
+        <th>Comments</th>
+        <th>Sentiment</th>
+      </tr>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <div class="audio-box">
+    <h3>Voice Commands</h3>
+        <p>You can try saying:</p>
+        <ul>
+            <li>"Hello" - just says hi</li>
+            <li>"Change the color to red" - changes background</li>
+            <li>"Go to stocks" - moves to that page</li>
+        </ul>
+    <button onclick="turnAudioOn()">Turn On Audio</button>
+    <button onclick="turnAudioOff()">Turn Off Audio</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.min.js"></script>
+  <script src="main.js"></script>
+  <script src="stocks.js"></script>
+</body>
+</html>
