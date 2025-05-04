@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dogs</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="stocks.html">Stocks</a></li>
+            <li><a href="dogs.html">Dogs</a></li>
+        </ul>
+    </nav>
+    <div class="dogs-stuff">
+        <h1>Dog Pics</h1>
+        <div id="dogSlider"></div>
+        <h2>Dog Breeds</h2>
+        <div id="breedButtons"></div>
+        <div id="breedInfo" style="display: none;">
+            <h3 id="breedName"></h3>
+            <p id="breedDesc"></p>
+            <p id="breedMinLife"></p>
+            <p id="breedMaxLife"></p>
+        </div>
+    </div>
+    <div class="audio-box">
+        <h3>Voice Commands</h3>
+        <p>You can try saying:</p>
+        <ul>
+            <li>"Hello" - just says hi</li>
+            <li>"Change the color to red" - changes background</li>
+            <li>"Go to stocks" - moves to that page</li>
+        </ul>
+        <button onclick="turnAudioOn()">Turn On Audio</button>
+        <button onclick="turnAudioOff()">Turn Off Audio</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-slider@1.0.2/dist/simpleslider.min.js"></script>
+    <script src="main.js"></script>
+    <script src="dogs.js"></script>
+</body>
+</html>
